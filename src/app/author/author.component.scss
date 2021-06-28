@@ -1,0 +1,51 @@
+@import "../variabiles.scss";
+
+.container-author{
+  margin-top: 80px;
+  min-height: 100vh;
+  background-color: #000;
+  color: ivory;
+  @include flex-col;
+  align-items: center;
+  h2{
+    margin-top: 40px;
+    span{
+      color: #952D32;
+    }
+  }
+  .image-author{
+    @include flex-col;
+    align-items: center;
+    justify-content: center;
+   img{
+     margin:40px 0px;
+    width: 40%;
+   }
+  }
+  .description{
+    padding: 50px;
+    text-align: center;
+    p{
+      line-height: 30px;
+      font-size: 22px;
+      span{
+        color: #952D32;
+        font-style: italic;
+      }
+    }
+  }
+  .socials{
+    ul{
+      @include flex-row;
+      list-style: none;
+      margin: 50px;
+      li{
+        margin: 25px;
+        font-size: 35px;
+        a{
+          color: #952D32;
+        }
+      }
+    }
+  }
+}

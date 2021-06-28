@@ -1,5 +1,16 @@
 @import "../variabiles";
 
+// @media (max-width: 575.98px) { ... }
+
+// // Small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) { ... }
+
+// // Medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) { ... }
+
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
+
 .home-container{
   margin-top: 80px;
   width: 100%;
@@ -7,14 +18,29 @@
   @include flex-row;
   background-color: black;
   justify-content: center;
+  @media (max-width: 991.98px) {
+    @include flex-col;
+    height: 1200px;
+   }
 
   .cover{
    height: 100%;
    width: 400px;
    @include flex-col;
+   @media (max-width: 991.98px) {
+    align-self: center;
+    height: 800px;
+   }
+   @media (max-width: 575.98px) {
+    width: 300px;
+     }
    img{
     width: 300px;
     margin-top: 40px;
+    @media (max-width: 991.98px) {
+      align-self: center;
+
+     }
    }
    button{
      margin-top: 20px;
@@ -27,6 +53,10 @@
      font-weight: bold;
      font-style: italic;
      cursor: pointer;
+     @media (max-width: 991.98px) {
+      align-self: center;
+
+     }
    }
 
   }
@@ -36,6 +66,10 @@
     @include flex-row;
     justify-content: center;
     align-items: center;
+    @media (max-width: 991.98px) {
+      width: 100%;
+      height: 50%;
+     }
 
   }
 }
@@ -67,6 +101,9 @@ main{
     margin: 125px 0px;
     @include flex-row;
     justify-content: center;
+    @media (max-width: 575.98px) {
+    @include flex-col;
+     }
 
     div:first-child{
       img{
@@ -77,6 +114,9 @@ main{
     div:last-child{
       text-align: center;
       width: 450px;
+      @media (max-width: 575.98px) {
+        width: 100%;
+         }
       span{
         margin-top: 10px;
         color: #952D32;

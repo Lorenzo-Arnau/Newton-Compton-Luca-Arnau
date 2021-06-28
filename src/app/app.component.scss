@@ -19,6 +19,10 @@
         list-style: none;
         font-size: 18px;
         cursor: pointer;
+        @media (max-width: 575.98px) {
+          font-size: 10px;
+          margin: 0px 10px;
+         }
         a{
           color: #952D32;
           text-decoration: none;

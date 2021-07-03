@@ -1,6 +1,6 @@
 @import "../variabiles.scss";
 
-footer{
+.footer{
   color: ivory;
   @include flex-row;
   background-color: #070507;
@@ -30,6 +30,22 @@ footer{
         }
        }
       }
+    }
+  }
+}
+.created{
+  width: 100%;
+  height: 25px;
+  background-color:#070507;
+  @include flex-row;
+  justify-content: center;
+  span{
+    font-style: italic;
+    color: #fff;
+    a{
+      color: #a80b13;
+      text-decoration: none;
+      cursor: pointer;
     }
   }
 }
